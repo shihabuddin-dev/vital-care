@@ -4,17 +4,24 @@ import {
 import MainLayout from "../layout/MainLayout";
 import ErrorPage from "../pages/ErrorPage";
 import Home from "../pages/Home";
+import Loader from "../components/ui/Loader";
 
 const router = createBrowserRouter([
     {
         path: "/",
         Component: MainLayout,
-        children:[
-            {index: true, Component: Home}
+        children: [
+            {
+                index: true,
+                hydrateFallbackElement: <Loader />,
+                loader: () => fetch('../doctors.json'),
+                Component: Home
+            },
+
         ]
-        
+
     },
-    {path: '*', Component: ErrorPage}
+    { path: '*', Component: ErrorPage }
 ]);
 
 export default router;
