@@ -7,9 +7,8 @@ const MainLayout = () => {
     return (
         <div>
             <Nav />
-            <div className='container mx-auto px-4 py-5 md:px-6 lg:px-12'>
+            <div className='container mx-auto px-4 py-5 md:px-6 lg:px-12 bg-[#efefef]'>
                 <Outlet />
-
             </div>
             <Footer />
         </div>

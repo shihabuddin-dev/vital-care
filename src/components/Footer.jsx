@@ -13,8 +13,8 @@ const Footer = () => {
         <NavLink to='/about-us'>About Us</NavLink>
     </div>
     return (
-        <div className='bg-black'>
-            <div className='container mx-auto py-12 px-4 md:px-6 lg:px-8 md:p-16 text-white flex justify-center items-center gap-4 flex-col'>
+        <div className=''>
+            <div className='container mx-auto py-12 px-4 md:px-6 lg:px-8 md:p-16 flex justify-center items-center gap-4 flex-col'>
                 <Link className="flex flex-wrap items-center">
                     <img className='w-8' src={logoFooter} alt="logo" />
                     <span className="ml-2 text-2xl font-bold tracking-wide uppercase">
@@ -24,7 +24,7 @@ const Footer = () => {
                 <ul>
                     <li>{links}</li>
                 </ul>
-                <hr className='border-t-2 border-gray-700 border-dashed w-full ' />
+                <hr className='border-t-2 border-gray-200 border-dashed w-full ' />
                 <div className='text-2xl md:text-3xl flex flex-wrap gap-4'>
                     <a href='https://github.com/shihabuddin-dev' target='blank'><FaGithub /> </a>
                     <a href='https://www.linkedin.com/in/shihabuddinreal' target='blank'><FaLinkedin /> </a>
