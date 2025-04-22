@@ -18,7 +18,7 @@ const Nav = () => {
                 <Link className="inline-flex items-center">
                     <img className='w-8' src={logo} alt="logo" />
                     <p className="ml-2 text-2xl font-bold text-gray-800">
-                        Law. BD
+                        Vital Care
                     </p>
                 </Link>
                 <ul className="items-center hidden space-x-8 lg:flex">
@@ -58,7 +58,7 @@ const Nav = () => {
                                     <Link className="inline-flex items-center">
                                         <img className='w-8' src={logo} alt="logo" />
                                         <p className="ml-2 text-2xl font-bold tracking-wide text-gray-800 uppercase">
-                                            Law. BD
+                                            Vital Care
                                         </p>
                                     </Link>
                                     <div>
