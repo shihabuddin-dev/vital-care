@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Doctor from './Doctor';
+import Button from './ui/Button';
 
-const Doctors = ({doctors}) => {
-  
+const Doctors = ({ doctors }) => {
+const [doctorsData, setDoctorsData]=useState(doctors)
+const [showAll,setShowAll]=useState(false)
+useEffect(()=>{
+    if(showAll) return setDoctorsData(doctors)
+    else return setDoctorsData(doctors.slice(0,6))
+
+},[showAll,doctors])
+
+
+
     return (
         <div className='mt-12 space-y-8 md:space-y-10'>
             <div className='text-center space-y-4 '>
@@ -13,10 +23,15 @@ const Doctors = ({doctors}) => {
 
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
                 {
-                    doctors.map(doctor => <Doctor key={doctor.id} doctor={doctor} />)
+                    doctorsData.map(doctor => <Doctor key={doctor.id} doctor={doctor} />)
                 }
             </div>
-
+            <div className='text-center'>
+                <Button onClick={()=>{
+                    setShowAll(!showAll)
+                    showAll && window.scrollTo(0,820)
+                }} label={showAll? 'Show Less' : 'Show All'} />
+            </div>
 
         </div>
     );

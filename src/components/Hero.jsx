@@ -7,8 +7,7 @@ const Hero = ({ setDoctors, data }) => {
     const [searchText, setSearchText] = useState('')
     const handleSearchText = (e, text) => {
         e.preventDefault()
-
-        const searchDrData = data.filter(data => data.name.toLowerCase().includes(text.toLowerCase()))
+        const searchDrData = data.filter(data => data.name.toLowerCase().includes(text.toLowerCase())|| data.qualifications.toLowerCase().includes(text.toLowerCase()))
         setDoctors(searchDrData)
     }
     return (
@@ -31,7 +30,7 @@ const Hero = ({ setDoctors, data }) => {
                     onChange={(e) => setSearchText(e.target.value)
                     }
                     type="text"
-                    placeholder='Search by Dr name or Speciality of doctorate' className='border shadow px-4 py-2 w-2/3 md:w-1/3 rounded-4xl bg-white border-gray-300 focus:outline-[#176AE5]' />
+                    placeholder='Search by Dr. Name or Qualifications' className='border shadow px-4 py-2 w-2/3 md:w-1/3 rounded-4xl bg-white border-gray-300 focus:outline-[#176AE5]' />
                 <Button type='submit' label='Search Now' />
             </form>
             <div className='flex justify-center items-center flex-col md:flex-row gap-4'>

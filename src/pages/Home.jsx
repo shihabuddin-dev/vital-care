@@ -6,8 +6,6 @@ import { useLoaderData } from 'react-router';
 const Home = () => {
     const data = useLoaderData()
     const [doctors,setDoctors]=useState(data)
-    
-
     return (
         <div>
                <Hero setDoctors={setDoctors} data={data}/>

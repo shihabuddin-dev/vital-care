@@ -11,3 +11,6 @@ a.active {
     view-transition-name: my-transition;
   }
   
+  html{
+    scroll-behavior: smooth;
+  }
