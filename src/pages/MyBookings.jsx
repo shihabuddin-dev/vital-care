@@ -41,7 +41,7 @@ const MyBookings = () => {
             </div>
             <div className='pb-8 md:pb-12 space-y-5'>
                 {
-                    appointList.map(doctorAppoint => <Appoints key={doctorAppoint.id} lawyerAppoint={doctorAppoint} handleDelete={handleDelete} />)
+                    appointList.map(doctorAppoint => <Appoints key={doctorAppoint.id} doctorAppoint={doctorAppoint} handleDelete={handleDelete} />)
                 }
             </div>
 
