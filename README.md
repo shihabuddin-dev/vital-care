@@ -1,6 +1,3 @@
-Here's a dynamic `README.md` file for your Vital Care GitHub repository:
-
-```markdown
 # 🏥 Vital Care - Medical Website
 
 ![Vital Care Banner](https://github.com/shihabuddin-dev/vital-care/blob/main/public/banner.png?raw=true)
