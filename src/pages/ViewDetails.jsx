@@ -10,12 +10,12 @@ import { addAppointToLocalStorage } from '../utils/localStorage';
 const ViewDetails = () => {
     const navigate = useNavigate()
     const data = useLoaderData()
-  
+
     const { id } = useParams()
     // finding single doctor data 
     const findDoctor = data.find(doctor => doctor.id === parseInt(id))
     console.log(id)
-    const { image_url, name, qualifications, registration_number, experience, availability_days, consultation_fee,workplace } = findDoctor || {}
+    const { image_url, name, qualifications, registration_number, experience, availability_days, consultation_fee, workplace } = findDoctor || {}
     if (!findDoctor) {
         return <SpecificError id={id} />
     }
@@ -41,7 +41,7 @@ const ViewDetails = () => {
 
     }
     return (
-        
+
         <div className='mb-12 mt-2 space-y-6'>
             <div className='space-y-5'>
                 {/* Doctor profile top */}
@@ -64,7 +64,7 @@ const ViewDetails = () => {
                             <p className='text-lg text-[#0F0F0F99]'>({qualifications})</p>
                         </div>
                         <hr className='border-t-2 border-gray-200 border-dashed w-full ' />
-                            <p className='text-[#0F0F0FB3] flex items-center gap-2'><span className='text-xl'>®</span> Registration No: {registration_number}</p>
+                        <p className='text-[#0F0F0FB3] flex items-center gap-2'><span className='text-xl'>®</span> Registration No: {registration_number}</p>
                         <div className='flex gap-2 items-center flex-wrap '><span className='font-semibold text-[#141414B3]' >Availability</span>
                             {availability_days.map((day, i) => <button key={i} className='bg-[#FFA00033] text-[#FFA000] border-1 px-2 py- rounded-4xl'>{day}</button>)}
                         </div>
@@ -86,11 +86,9 @@ const ViewDetails = () => {
                         <FiAlertOctagon className='text-lg' /> Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</button>
                     <div className='mt-5 grid' >
                         <Button
-                        className={`${!isAvailable&& 'bg-[#FFA000] hover:bg-amber-300'}`}
+                            className={`${!isAvailable && 'bg-[#FFA000] hover:bg-amber-300'}`}
                             onClick={() => handleBookAnAppoint(id)}
                             label={isAvailable ? 'Book Appointment Now' : 'UnAvailable'} />
-
-                    
                     </div>
                 </div>
             </div>

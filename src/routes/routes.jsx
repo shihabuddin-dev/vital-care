@@ -6,6 +6,7 @@ import ErrorPage from "../pages/ErrorPage";
 import Home from "../pages/Home";
 import Loader from "../components/ui/Loader";
 import ViewDetails from "../pages/ViewDetails";
+import MyBookings from "../pages/MyBookings";
 
 const router = createBrowserRouter([
     {
@@ -23,6 +24,12 @@ const router = createBrowserRouter([
                 hydrateFallbackElement: <Loader />,
                 loader: () => fetch('../doctors.json'),
                 Component: ViewDetails
+            },
+            {
+                path: 'my-bookings',
+                hydrateFallbackElement: <Loader />,
+                loader: () => fetch('../doctors.json'),
+                Component: MyBookings
 
             }
 
