@@ -10,7 +10,7 @@ const Footer = () => {
         <NavLink to='/my-bookings'>My Bookings</NavLink>
         <NavLink to='/blogs'>Blogs</NavLink>
         <NavLink to='/services'>Services</NavLink>
-        <NavLink to='/about-us'>About Us</NavLink>
+        <NavLink to='/reviews'>Reviews</NavLink>
     </div>
     return (
         <div className=''>

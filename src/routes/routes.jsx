@@ -7,6 +7,10 @@ import Home from "../pages/Home";
 import Loader from "../components/ui/Loader";
 import ViewDetails from "../pages/ViewDetails";
 import MyBookings from "../pages/MyBookings";
+import Reviews from "../pages/Reviews";
+import ServicesPage from "../pages/ServicesPage";
+import EmergencyPage from "../pages/EmergencyPage";
+import Blogs from "../pages/Blogs";
 
 const router = createBrowserRouter([
     {
@@ -31,7 +35,26 @@ const router = createBrowserRouter([
                 loader: () => fetch('../doctors.json'),
                 Component: MyBookings
 
+            },
+            {
+                path: '/reviews',
+                hydrateFallbackElement: <Loader />,
+                loader: () => fetch('../reviews.json'),
+                Component: Reviews
+            },
+            {
+                path: '/blogs',
+                Component: Blogs
+            },
+            {
+                path: '/services',
+                Component: ServicesPage,
+            },
+            {
+                path: '/emergency',
+                Component: EmergencyPage
             }
+
 
         ]
 

@@ -10,7 +10,7 @@ const Nav = () => {
         <NavLink to='/my-bookings'>My Bookings</NavLink>
         <NavLink to='/blogs'>Blogs</NavLink>
         <NavLink to='/services'>Services</NavLink>
-        <NavLink to='/about-us'>About Us</NavLink>
+        <NavLink to='/reviews'>Reviews</NavLink>
     </div>
     return (
         <div className="container mx-auto px-4 py-5 md:px-6 lg:px-12 bg-[#efefef]">
@@ -26,7 +26,7 @@ const Nav = () => {
                 </ul>
                 <ul className="items-center hidden space-x-8 lg:flex">
                     <li>
-                    <NavLink to='/contact-us'> <Button label='Contact Us' /></NavLink>
+                    <NavLink to='/emergency'> <Button label='Emergency' /></NavLink>
                     </li>
                 </ul>
                 <div className="lg:hidden">
@@ -81,7 +81,7 @@ const Nav = () => {
                                     <ul className="space-y-4">
                                         <li>{links}</li>
                                         <li>
-                                        <NavLink to='/contact-us'> <button label='Contact Us' /></NavLink>
+                                        <NavLink to='/emergency'> <button label='Emergency' /></NavLink>
                                            
                                         </li>
                                     </ul>
