@@ -38,8 +38,6 @@ const router = createBrowserRouter([
             },
             {
                 path: '/reviews',
-                hydrateFallbackElement: <Loader />,
-                loader: () => fetch('../reviews.json'),
                 Component: Reviews
             },
             {
