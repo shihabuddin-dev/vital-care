@@ -4,7 +4,7 @@
 
 A modern medical website for **Vital Care** clinic in Bogura, Bangladesh, built with React and Tailwind CSS.
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-176AE5?style=for-the-badge&logo=vercel&logoColor=white)](https://vital-care.vercel.app)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-176AE5?style=for-the-badge&logo=vercel&logoColor=white)](https://vital-care-pro.vercel.app)
 [![GitHub License](https://img.shields.io/github/license/shihabuddin-dev/vital-care?style=for-the-badge)](LICENSE)
 [![React Version](https://img.shields.io/badge/React-19.0.0-blue?style=for-the-badge&logo=react)](https://react.dev)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1.4-06B6D4?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com)
