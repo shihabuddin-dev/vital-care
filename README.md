@@ -1,7 +1,5 @@
 # 🏥 Vital Care - Medical Website
 
-![Vital Care Banner](https://github.com/shihabuddin-dev/vital-care/blob/main/public/banner.png?raw=true)
-
 A modern medical website for **Vital Care** clinic in Bogura, Bangladesh, built with React and Tailwind CSS.
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-176AE5?style=for-the-badge&logo=vercel&logoColor=white)](https://vital-care-pro.netlify.app)
