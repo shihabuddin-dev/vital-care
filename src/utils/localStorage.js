@@ -26,7 +26,7 @@ export const addAppointToLocalStorage = (id) => {
 
 export const removeAppointFromLocalStorage = (id) => {
     const storedAppointData = getStoreAppoint()
-    const remainingAppointData = storedAppointData.filter(appoint => appoint.id !== id)
+    const remainingAppointData = storedAppointData.filter(appoint => parseInt(appoint) !== id)
     const data = JSON.stringify(remainingAppointData)
     localStorage.setItem('appoint', data)
     toast.error('Appointment has been Canceled')

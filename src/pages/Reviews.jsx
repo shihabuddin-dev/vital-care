@@ -80,6 +80,7 @@ const Reviews = () => {
 
     return (
         <div className="bg-white min-h-screen py-8 px-4 sm:px-6 lg:px-8 rounded-2xl">
+            <title>Reviews || Vital Care</title>
             <div className="max-w-7xl mx-auto">
                 {/* Page Header */}
                 <div className="text-center mb-12">

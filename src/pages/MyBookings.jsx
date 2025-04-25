@@ -32,6 +32,7 @@ const MyBookings = () => {
     }
     return (
         <div>
+            <title>Bookings || Vital Care</title>
             <Chart appointList={appointList} />
             {/* header part  */}
             <div className='text-center py-8 md:py-12 space-y-3'>

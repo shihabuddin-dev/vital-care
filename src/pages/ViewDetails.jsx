@@ -14,7 +14,7 @@ const ViewDetails = () => {
     const { id } = useParams()
     // finding single doctor data 
     const findDoctor = data.find(doctor => doctor.id === parseInt(id))
-    console.log(id)
+
     const { image_url, name, qualifications, registration_number, experience, availability_days, consultation_fee, workplace } = findDoctor || {}
     if (!findDoctor) {
         return <SpecificError id={id} />
@@ -43,6 +43,7 @@ const ViewDetails = () => {
     return (
 
         <div className='mb-12 mt-2 space-y-6'>
+            <title>Doctor Details || Vital Care</title>
             <div className='space-y-5'>
                 {/* Doctor profile top */}
                 <div className='text-center space-y-4 bg-[#0F0F0F0D] p-8 md:p-16 rounded-2xl'>

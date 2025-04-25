@@ -9,6 +9,7 @@ const Home = () => {
     const [doctors,setDoctors]=useState(data)
     return (
         <div>
+            <title>Home || Vital Care</title>
                <Hero setDoctors={setDoctors} data={data}/>
               <Doctors doctors={doctors}/>
               <Service/>

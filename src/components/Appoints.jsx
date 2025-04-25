@@ -2,7 +2,7 @@ import React from 'react';
 
 const Appoints = ({ doctorAppoint, handleDelete }) => {
     const { id, name, qualifications, consultation_fee } = doctorAppoint || {}
-    console.log(doctorAppoint)
+    
 
     return (
         <div>

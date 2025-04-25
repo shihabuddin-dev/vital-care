@@ -89,6 +89,7 @@ const Blogs = () => {
 
   return (
     <div className="bg-white min-h-screen">
+      <title>Blogs || Vital Care</title>
       {/* Hero Section */}
       <div className="bg-[#176AE5] text-white py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
